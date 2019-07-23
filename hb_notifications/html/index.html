@@ -1,0 +1,132 @@
+
+<html>
+	<head>
+		<link rel="stylesheet" href="reset.css" type="text/css">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="./listener.js" type="text/javascript"></script>
+	</head>
+	<body>
+	
+		<div id="message">
+					
+				<div class="notify">
+					<p id="message"></p>
+				</div>
+				
+		</div>
+		
+		<div id="message-top-right">
+					
+				<div class="notify">
+					<p id="message"></p>
+				</div>
+				
+		</div>
+		
+		<div id="message-top-middle">
+					
+				<div class="notify">
+					<p id="message"></p>
+				</div>
+				
+		</div>
+		
+		<div id="message-middle-middle">
+					
+				<div class="notify">
+					<p id="message"></p>
+				</div>
+				
+		</div>
+		
+		<div id="message-middle-left">
+					
+				<div class="notify">
+					<p id="message"></p>
+				</div>
+				
+		</div>
+		
+		<div id="message-middle-right">
+					
+				<div class="notify">
+					<p id="message"></p>
+				</div>
+				
+		</div>
+		
+		<div id="message-bottom-middle">
+					
+				<div class="notify">
+					<p id="message"></p>
+				</div>
+				
+		</div>
+		
+		<div id="message-bottom-left">
+					
+				<div class="notify">
+					<p id="message"></p>
+				</div>
+				
+		</div>
+		
+		<div id="message-bottom-right">
+					
+				<div class="notify">
+					<p id="message"></p>
+				</div>
+				
+		</div>
+		
+			<script>
+			    window.addEventListener('message', function (event) {
+                    var item = event.data;
+                    if (item.display) {
+					
+						if (item.position === 'top-left') {
+						
+							document.getElementById("message").innerHTML = item.message;
+							document.getElementById("message").style.color = item.color;
+						} else if (item.position === 'top-right') {
+						
+							document.getElementById("message-top-right").innerHTML = item.message;
+							document.getElementById("message-top-right").style.color = item.color;
+						} else if (item.position === 'top-middle') {
+						
+							document.getElementById("message-top-middle").innerHTML = item.message;
+							document.getElementById("message-top-middle").style.color = item.color;
+						} else if (item.position === 'middle-middle') {
+						
+							document.getElementById("message-middle-middle").innerHTML = item.message;
+							document.getElementById("message-middle-middle").style.color = item.color;
+						} else if (item.position === 'middle-left') {
+							
+							document.getElementById("message-middle-left").innerHTML = item.message;
+							document.getElementById("message-middle-left").style.color = item.color;
+						}	else if (item.position === 'middle-right') {
+						
+							document.getElementById("message-middle-right").innerHTML = item.message;
+							document.getElementById("message-middle-right").style.color = item.color;
+						} else if (item.position === 'bottom-middle') {
+							
+							document.getElementById("message-bottom-middle").innerHTML = item.message;
+							document.getElementById("message-bottom-middle").style.color = item.color;
+						} else if (item.position === 'bottom-left') {
+						
+							document.getElementById("message-bottom-left").innerHTML = item.message;
+							document.getElementById("message-bottom-left").style.color = item.color;
+						} else if (item.position === 'bottom-right') {
+						
+							document.getElementById("message-bottom-right").innerHTML = item.message;
+							document.getElementById("message-bottom-right").style.color = item.color;
+						} else
+							
+							document.getElementById("message").innerHTML = item.message;
+							document.getElementById("message").style.color = item.color;
+					} 
+                });
+			</script>
+	</body>
+</html>

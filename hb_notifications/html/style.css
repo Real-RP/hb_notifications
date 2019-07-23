@@ -1,0 +1,230 @@
+* {
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#message {
+	padding: 10px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+	background-color: #211e1e;
+	border-radius: 8px;
+	border: 2px solid silver ;
+	
+	/* animation part for the awesome swing :3 */
+	-webkit-animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-name: swing;
+	animation-duration: 1s;
+}
+
+#message-top-right {
+	padding: 10px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+	background-color: #211e1e;
+	border-radius: 8px;
+	border: 2px solid silver ;
+	
+	/* animation part for the awesome swing :3 */
+	-webkit-animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-name: swing;
+	animation-duration: 1s;
+}
+
+#message-top-middle {
+	padding: 10px;
+    position: absolute;
+    top: 5%;
+    right: 40%;
+	background-color: #211e1e;
+	border-radius: 8px;
+	border: 2px solid silver ;
+	
+	/* animation part for the awesome swing :3 */
+	-webkit-animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-name: swing;
+	animation-duration: 1s;
+}
+
+#message-middle-middle {
+	padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+	background-color: #211e1e;
+	border-radius: 8px;
+	border: 2px solid silver ;
+	
+	/* animation part for the awesome swing :3 */
+	-webkit-animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-name: swing;
+	animation-duration: 1s;
+}
+
+#message-middle-left {
+	padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+	background-color: #211e1e;
+	border-radius: 8px;
+	border: 2px solid silver ;
+	
+	/* animation part for the awesome swing :3 */
+	-webkit-animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-name: swing;
+	animation-duration: 1s;
+}
+
+#message-middle-right {
+	padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+	background-color: #211e1e;
+	border-radius: 8px;
+	border: 2px solid silver ;
+	
+	/* animation part for the awesome swing :3 */
+	-webkit-animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-name: swing;
+	animation-duration: 1s;
+}
+
+#message-bottom-middle {
+	padding: 10px;
+    position: absolute;
+    bottom: 5%;
+    right: 40%;
+	background-color: #211e1e;
+	border-radius: 8px;
+	border: 2px solid silver ;
+	
+	/* animation part for the awesome swing :3 */
+	-webkit-animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-name: swing;
+	animation-duration: 1s;
+}
+
+#message-bottom-left {
+	padding: 10px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+	background-color: #211e1e;
+	border-radius: 8px;
+	border: 2px solid silver ;
+	
+	/* animation part for the awesome swing :3 */
+	-webkit-animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-name: swing;
+	animation-duration: 1s;
+}
+
+#message-bottom-right {
+	padding: 10px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+	background-color: #211e1e;
+	border-radius: 8px;
+	border: 2px solid silver ;
+	
+	/* animation part for the awesome swing :3 */
+	-webkit-animation-name: swing;
+	-webkit-animation-duration: 1s;
+	animation-name: swing;
+	animation-duration: 1s;
+}
+
+
+.notify {
+	font-size: 24px;
+	text-shadow: 2px 2px 5px black;
+}
+
+
+@-webkit-keyframes swing {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes swing {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+

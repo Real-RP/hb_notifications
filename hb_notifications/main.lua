@@ -57,3 +57,11 @@ AddEventHandler("onResourceStart", function(resource) --keeps the message hidden
 		TriggerEvent("message:hide", true)
 	end
 end)
+
+AddEventHandler("onClientResourceStart", function(resource) --hides the boxes if someone connects
+	if (resource == GetCurrentResourceName()) then
+		TriggerEvent("message:hide", true)
+	else
+		return
+	end
+end)

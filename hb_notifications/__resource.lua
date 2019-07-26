@@ -16,5 +16,7 @@ server_scripts {
 files {
     'html/index.html',
     'html/style.css',
-    'html/listener.js'
+    'html/listener.js',
+    'html/sound/notification.ogg',
+    'html/fonts/pdown.ttf'
 }

@@ -1,6 +1,3 @@
-# hb_notifications
-A Notification System for everyone who likes a good style.
-
 
 This is a Notification System! It is not a resource that you can easily paste in your server and it will do something for you...
 
@@ -19,15 +16,16 @@ How to use it for another resources:
 		- message (string)
 		- color (any format eg. rbg(), #FFFFF... (string))
 		- time the message will stay in ms (no string)
+		- sound that will be played while a notification
 		
 	
 	Use it in your events like this:
 	
 		(on client scripts)
-		TriggerEvent("hb_notifications:display", "position", "text", "color", time)
+		TriggerEvent("hb_notifications:display", "position", "text", "color", time, sound(true/false toggle)
 		
 		(on server scripts)
-		TriggerClientEvent("hb_notifications:display", source, "position", "text", "color", time)
+		TriggerClientEvent("hb_notifications:display", source, "position", "text", "color", time, sound(true/false toggle)
 		
 		
 	thanks for using!

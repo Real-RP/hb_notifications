@@ -1,23 +1,27 @@
 
 if Config.TestMSG == true then
 	RegisterCommand("sendtestmsg", function(source, args, rawCommand)
-		TriggerEvent("hb_notifications:display", "top-right", "test this shit I'm out mm mmm mmmm", "rgb(255, 14, 88)", 14000)
+		TriggerEvent("hb_notifications:display", "top-right", "test this shit I'm out mm mmm mmmm", "blue", 14000, true) --position, text, color, time(milliseconds), notifications sound, author
 	end)
 end
 
 RegisterNetEvent("hb_notifications:display")
-AddEventHandler("hb_notifications:display", function(pos, msg, hue, time)
+AddEventHandler("hb_notifications:display", function(pos, msg, hue, time, sound)
 	
-	ShowNotify(pos, msg, hue, time)
+	ShowNotify(pos, msg, hue, time, sound)
 end)
 
-function ShowNotify(pos, msg, hue, time)
+function ShowNotify(pos, msg, hue, time, sound)
 	if msg ~= nil and msg ~= "" then
 		if time == nil then
 			time = Config.DefaultFadeOut
 		end
 		
+		
 		TriggerEvent('message:show', pos, msg, hue)
+		if sound == true then
+			SendNUIMessage({message = 'play', sound = 'notification.ogg', volume = 0.3})
+		end
 		Wait(time)
 		TriggerEvent('message:hide')
 	else
@@ -26,6 +30,15 @@ function ShowNotify(pos, msg, hue, time)
 end	
 	
 
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(0)
+		
+		if IsControlPressed(0, 177) then --if pressing backspace, the message will dissapear
+			TriggerEvent('message:hide')
+		end
+	end
+end)
 
 
 			-- UI Events --

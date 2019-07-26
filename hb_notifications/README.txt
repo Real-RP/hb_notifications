@@ -6,7 +6,7 @@ if you have no knowledge , then this resource is not really what you are looking
 
 HOW TO INSTALL:
 
-	drop the resource into your resources folder, make sure that the name is 'hb_notifications', add 'start hb_notifications' to your server.cfg and restart your server.
+drop the resource into your resources folder, make sure that the name is 'hb_notifications', add 'start hb_notifications' to your server.cfg and restart your server.
 	
 	
 How to use it for another resources:
@@ -16,15 +16,16 @@ How to use it for another resources:
 		- message (string)
 		- color (any format eg. rbg(), #FFFFF... (string))
 		- time the message will stay in ms (no string)
+		- sound that will be played while a notification
 		
 	
 	Use it in your events like this:
 	
 		(on client scripts)
-		TriggerEvent("hb_notifications:display", "position", "text", "color", time)
+		TriggerEvent("hb_notifications:display", "position", "text", "color", time, sound(true/false toggle)
 		
 		(on server scripts)
-		TriggerClientEvent("hb_notifications:display", source, "position", "text", "color", time)
+		TriggerClientEvent("hb_notifications:display", source, "position", "text", "color", time, sound(true/false toggle)
 		
 		
 	thanks for using!

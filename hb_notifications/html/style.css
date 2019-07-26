@@ -1,16 +1,25 @@
-* {
-	color: #fff;
-	font-family: Arial, Helvetica, sans-serif;
+
+
+@font-face {
+  font-family: 'lowerfont';
+  src: url('../fonts/pdown.ttf');
+  font-style: oblique;
+  
+  /* animation part for the awesome swing :3 */
+  -webkit-animation-name: swing;
+  -webkit-animation-duration: 1s;
+  animation-name: swing;
+  animation-duration: 1s;
 }
 
 #message {
+	display: none;
 	padding: 10px;
     position: absolute;
     top: 5%;
     left: 5%;
 	background-color: #211e1e;
-	border-radius: 8px;
-	border: 2px solid silver ;
+	outline: thick ridge silver;
 	
 	/* animation part for the awesome swing :3 */
 	-webkit-animation-name: swing;
@@ -20,14 +29,15 @@
 }
 
 #message-top-right {
+	display: none; /* clearifys that the box should be only showed if it get's called */
 	padding: 10px;
     position: absolute;
     top: 5%;
     right: 5%;
 	background-color: #211e1e;
-	border-radius: 8px;
-	border: 2px solid silver ;
-	
+	outline: thick ridge silver;
+	box-shadow: 0px 15px 20px gray;
+
 	/* animation part for the awesome swing :3 */
 	-webkit-animation-name: swing;
 	-webkit-animation-duration: 1s;
@@ -36,13 +46,13 @@
 }
 
 #message-top-middle {
+	display: none;
 	padding: 10px;
     position: absolute;
     top: 5%;
     right: 40%;
 	background-color: #211e1e;
-	border-radius: 8px;
-	border: 2px solid silver ;
+	outline: thick ridge silver;
 	
 	/* animation part for the awesome swing :3 */
 	-webkit-animation-name: swing;
@@ -52,13 +62,13 @@
 }
 
 #message-middle-middle {
+	display: none;
 	padding: 10px;
     position: absolute;
     top: 50%;
     right: 40%;
 	background-color: #211e1e;
-	border-radius: 8px;
-	border: 2px solid silver ;
+	outline: thick ridge silver;
 	
 	/* animation part for the awesome swing :3 */
 	-webkit-animation-name: swing;
@@ -68,13 +78,13 @@
 }
 
 #message-middle-left {
+	display: none;
 	padding: 10px;
     position: absolute;
     top: 50%;
     left: 5%;
 	background-color: #211e1e;
-	border-radius: 8px;
-	border: 2px solid silver ;
+	outline: thick ridge silver;
 	
 	/* animation part for the awesome swing :3 */
 	-webkit-animation-name: swing;
@@ -84,13 +94,13 @@
 }
 
 #message-middle-right {
+	display: none;
 	padding: 10px;
     position: absolute;
     top: 50%;
     right: 5%;
 	background-color: #211e1e;
-	border-radius: 8px;
-	border: 2px solid silver ;
+	outline: thick ridge silver;
 	
 	/* animation part for the awesome swing :3 */
 	-webkit-animation-name: swing;
@@ -100,13 +110,13 @@
 }
 
 #message-bottom-middle {
+	display: none;
 	padding: 10px;
     position: absolute;
     bottom: 5%;
     right: 40%;
 	background-color: #211e1e;
-	border-radius: 8px;
-	border: 2px solid silver ;
+	outline: thick ridge silver;
 	
 	/* animation part for the awesome swing :3 */
 	-webkit-animation-name: swing;
@@ -116,13 +126,13 @@
 }
 
 #message-bottom-left {
+	display: none;
 	padding: 10px;
     position: absolute;
     bottom: 5%;
     left: 5%;
 	background-color: #211e1e;
-	border-radius: 8px;
-	border: 2px solid silver ;
+	outline: thick ridge silver;
 	
 	/* animation part for the awesome swing :3 */
 	-webkit-animation-name: swing;
@@ -132,13 +142,13 @@
 }
 
 #message-bottom-right {
+	display: none;
 	padding: 10px;
     position: absolute;
     bottom: 5%;
     right: 5%;
 	background-color: #211e1e;
-	border-radius: 8px;
-	border: 2px solid silver ;
+	outline: thick ridge silver;
 	
 	/* animation part for the awesome swing :3 */
 	-webkit-animation-name: swing;
@@ -147,11 +157,10 @@
 	animation-duration: 1s;
 }
 
-
 .notify {
-	font-size: 24px;
-	text-shadow: 2px 2px 5px black;
+	font-family: 'lowerfont';
 }
+
 
 
 @-webkit-keyframes swing {
@@ -195,36 +204,50 @@
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+	
+	
   }
 
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1);
+
   }
 
   40% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
     transform: scale3d(0.75, 1.25, 1);
+
   }
 
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
     transform: scale3d(1.15, 0.85, 1);
+
   }
 
   65% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
     transform: scale3d(0.95, 1.05, 1);
+	transform: rotateZ(-10deg);
+	
+	
   }
 
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
     transform: scale3d(1.05, 0.95, 1);
+	transform: rotateZ(10deg);
+
   }
 
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+	
+	
   }
 }
+
+
 

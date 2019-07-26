@@ -13,152 +13,152 @@
 }
 
 #message {
-	display: none;
-	padding: 10px;
+    display: none;
+    padding: 10px;
     position: absolute;
     top: 5%;
     left: 5%;
-	background-color: #211e1e;
-	outline: thick ridge silver;
+    background-color: #211e1e;
+    outline: thick ridge silver;
 	
-	/* animation part for the awesome swing :3 */
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 1s;
-	animation-name: swing;
-	animation-duration: 1s;
+    /* animation part for the awesome swing :3 */
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-name: swing;
+    animation-duration: 1s;
 }
 
 #message-top-right {
-	display: none; /* clearifys that the box should be only showed if it get's called */
-	padding: 10px;
+    display: none; /* clearifys that the box should be only showed if it get's called */
+    padding: 10px;
     position: absolute;
     top: 5%;
     right: 5%;
-	background-color: #211e1e;
-	outline: thick ridge silver;
-	box-shadow: 0px 15px 20px gray;
+    background-color: #211e1e;
+    outline: thick ridge silver;
+    box-shadow: 0px 15px 20px gray;
 
-	/* animation part for the awesome swing :3 */
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 1s;
-	animation-name: swing;
-	animation-duration: 1s;
+    /* animation part for the awesome swing :3 */
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-name: swing;
+    animation-duration: 1s;
 }
 
 #message-top-middle {
-	display: none;
-	padding: 10px;
+    display: none;
+    padding: 10px;
     position: absolute;
     top: 5%;
     right: 40%;
-	background-color: #211e1e;
-	outline: thick ridge silver;
+    background-color: #211e1e;
+    outline: thick ridge silver;
 	
-	/* animation part for the awesome swing :3 */
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 1s;
-	animation-name: swing;
-	animation-duration: 1s;
+    /* animation part for the awesome swing :3 */
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-name: swing;
+    animation-duration: 1s;
 }
 
 #message-middle-middle {
-	display: none;
-	padding: 10px;
+    display: none;
+    padding: 10px;
     position: absolute;
     top: 50%;
     right: 40%;
-	background-color: #211e1e;
-	outline: thick ridge silver;
+    background-color: #211e1e;
+    outline: thick ridge silver;
 	
-	/* animation part for the awesome swing :3 */
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 1s;
-	animation-name: swing;
-	animation-duration: 1s;
+    /* animation part for the awesome swing :3 */
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-name: swing;
+    animation-duration: 1s;
 }
 
 #message-middle-left {
-	display: none;
-	padding: 10px;
+    display: none;
+    padding: 10px;
     position: absolute;
     top: 50%;
     left: 5%;
-	background-color: #211e1e;
-	outline: thick ridge silver;
+    background-color: #211e1e;
+    outline: thick ridge silver;
 	
-	/* animation part for the awesome swing :3 */
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 1s;
-	animation-name: swing;
-	animation-duration: 1s;
+    /* animation part for the awesome swing :3 */
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-name: swing;
+    animation-duration: 1s;
 }
 
 #message-middle-right {
-	display: none;
-	padding: 10px;
+    display: none;
+    padding: 10px;
     position: absolute;
     top: 50%;
     right: 5%;
-	background-color: #211e1e;
-	outline: thick ridge silver;
+    background-color: #211e1e;
+    outline: thick ridge silver;
 	
-	/* animation part for the awesome swing :3 */
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 1s;
-	animation-name: swing;
-	animation-duration: 1s;
+    /* animation part for the awesome swing :3 */
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-name: swing;
+    animation-duration: 1s;
 }
 
 #message-bottom-middle {
-	display: none;
-	padding: 10px;
+    display: none;
+    padding: 10px;
     position: absolute;
     bottom: 5%;
     right: 40%;
-	background-color: #211e1e;
-	outline: thick ridge silver;
-	
-	/* animation part for the awesome swing :3 */
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 1s;
-	animation-name: swing;
-	animation-duration: 1s;
+    background-color: #211e1e;
+    outline: thick ridge silver;
+
+    /* animation part for the awesome swing :3 */
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-name: swing;
+    animation-duration: 1s;
 }
 
 #message-bottom-left {
-	display: none;
-	padding: 10px;
+    display: none;
+    padding: 10px;
     position: absolute;
     bottom: 5%;
     left: 5%;
-	background-color: #211e1e;
-	outline: thick ridge silver;
+    background-color: #211e1e;
+    outline: thick ridge silver;
 	
-	/* animation part for the awesome swing :3 */
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 1s;
-	animation-name: swing;
-	animation-duration: 1s;
+    /* animation part for the awesome swing :3 */
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-name: swing;
+    animation-duration: 1s;
 }
 
 #message-bottom-right {
-	display: none;
-	padding: 10px;
+    display: none;
+    padding: 10px;
     position: absolute;
     bottom: 5%;
     right: 5%;
-	background-color: #211e1e;
-	outline: thick ridge silver;
+    background-color: #211e1e;
+    outline: thick ridge silver;
 	
-	/* animation part for the awesome swing :3 */
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 1s;
-	animation-name: swing;
-	animation-duration: 1s;
+    /* animation part for the awesome swing :3 */
+    -webkit-animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-name: swing;
+    animation-duration: 1s;
 }
 
 .notify {
-	font-family: 'lowerfont';
+    font-family: 'lowerfont';
 }
 
 

@@ -4,7 +4,7 @@ description 'Notification system of hb (real-hamburger)'
 ui_page 'html/index.html'
 
 client_scripts {
-	'config.lua',
+    'config.lua',
     'main.lua'
 } 
 

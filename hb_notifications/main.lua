@@ -1,7 +1,7 @@
 
 if Config.TestMSG == true then
 	RegisterCommand("sendtestmsg", function(source, args, rawCommand)
-		TriggerEvent("hb_notifications:display", "top-right", "test this shit I'm out mm mmm mmmm", "blue", 14000, true) --position, text, color, time(milliseconds), notifications sound, author
+		TriggerEvent("hb_notifications:display", "top-right", color('#2fe80e', underlined("author:")).." "..big("Peter ").."likes his "..bold("chocolate Ice")..",".._break.."<hr>but if he "..strikethrough("drinks ").."thinks to "..italic("long").." about it, it will "..small("melt"), "blue", 14000, true) --position, text, color, time(milliseconds), notifications sound
 	end)
 end
 
